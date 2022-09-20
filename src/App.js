@@ -2,6 +2,7 @@ import styled, {css} from "styled-components";
 import About from "./components/about/About";
 import Banner from "./components/banner/Banner";
 import Essential from "./components/essential/Essential";
+import FAQ from "./components/faq/FAQ";
 import Navigation from "./components/nav/Navigation";
 import Product from "./components/product/Product";
 
@@ -23,6 +24,9 @@ function App() {
     <Container>
       <About />
       <AboutShape />
+    </Container>
+     <Container>
+       <FAQ />
     </Container>
   </>
   );
