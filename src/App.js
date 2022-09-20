@@ -5,6 +5,7 @@ import Essential from "./components/essential/Essential";
 import FAQ from "./components/faq/FAQ";
 import Navigation from "./components/nav/Navigation";
 import Product from "./components/product/Product";
+import Testimony from "./components/testimony/Testimony";
 
 
 function App() {
@@ -27,6 +28,10 @@ function App() {
     </Container>
      <Container>
        <FAQ />
+    </Container>
+    <Container>
+      <Testimony />
+      <TestimonyShape />
     </Container>
   </>
   );
@@ -61,6 +66,12 @@ const Shape = css`
   margin-top: -50px;
  clip-path: inset(10% 35% 7% 0);
   background-color: pink;
+`;
+  const TestimonyShape = styled.div`
+  ${Shape}
+  margin-top: -50px;
+ clip-path: inset(10% 27% 30% 5%);
+  background-color: white;
 `;
 
 
