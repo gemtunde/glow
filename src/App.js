@@ -1,4 +1,5 @@
 import styled, {css} from "styled-components";
+import About from "./components/about/About";
 import Banner from "./components/banner/Banner";
 import Essential from "./components/essential/Essential";
 import Navigation from "./components/nav/Navigation";
@@ -18,6 +19,10 @@ function App() {
     </Container>
     <Container>
       <Essential />
+    </Container>
+    <Container>
+      <About />
+      <AboutShape />
     </Container>
   </>
   );
@@ -44,8 +49,13 @@ const Shape = css`
   const ProductShape = styled.div`
   ${Shape}
   margin-top: -50px;
-  //clip-path: polygon(54% 0, 100% 0%, 100% 100%, 75% 100%);
   clip-path: inset(0 0 15% 40%);
+  background-color: pink;
+`;
+  const AboutShape = styled.div`
+  ${Shape}
+  margin-top: -50px;
+ clip-path: inset(10% 35% 7% 0);
   background-color: pink;
 `;
 

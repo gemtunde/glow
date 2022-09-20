@@ -86,6 +86,7 @@ const Container = styled.div`
    align-items: center;
    justify-content: start;
    margin: 0 50px; 
+   margin-top: -100px;
 `;
 const TopContainer = styled.div`
 width: 100%;
@@ -128,17 +129,18 @@ justify-content: center;
 margin: 0px 30px;
 `;
 const SubContainer = styled.div`
-  width: 400px;
-  height: 400px;
+  width: 310px;
+  height: 300px;
   padding: 10px;
+  margin: 10px;
   display: flex;
   flex-direction:column;
   align-items: center;
   justify-content: center;
 `;
 const ImageContainer = styled.div`
-  width: 400px;
-  height: 370px;
+  width: 250px;
+  height: 250px;
   background-color:white;
 `;
 const Image = styled.img`
