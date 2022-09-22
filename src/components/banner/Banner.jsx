@@ -13,6 +13,7 @@ const Banner = () => {
                     <Image src={Profile} alt='profile' />
                  Out.
             </Text>
+            <RoundTag></RoundTag>
             <Description>
                We want to bring to the world through our products
                 that very special feeling joy, health and positive energy.
@@ -51,10 +52,22 @@ flex-direction:column;
 align-items: center;
 justify-content: start;
 margin-top: 100px;
+
+position: relative;
 `;
 const Text = styled.h2`
 font-size: 85px;
 font-weight: normal;
+`;
+const RoundTag = styled.div`
+    width: 136px;
+    height: 50px;
+    border:2px solid white;
+    background-color:transparent;
+    border-radius: 30px;
+    position: absolute;
+    top: 136px;
+    right: 204px;
 `;
 const Image = styled.img`
   width: 150px;

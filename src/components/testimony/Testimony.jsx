@@ -35,7 +35,7 @@ export default Testimony;
 
 const Container = styled.div`
    display: flex;
-   margin: 0px 50px; 
+   margin: -170px 0px 50px 50px; 
  
 `;
 const LeftContainer = styled.div`

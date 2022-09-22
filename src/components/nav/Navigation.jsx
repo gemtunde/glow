@@ -17,7 +17,8 @@ const Navigation = () => {
                     <MenuItem>Blog</MenuItem>
                     <MenuItem>Reviews</MenuItem>
                 </Menu>
-                <Icon><RiDoorLockFill color='#f15507' size={40} /> 1</Icon>
+                <Icon><RiDoorLockFill color='#f15507' size={40} /> </Icon>
+                <Counter>1</Counter>
             </RightContainer>
         </Wrapper>
     </Container>
@@ -53,12 +54,28 @@ const DotIcon = styled.div`
     margin-top: 26px;
     border-radius: 50%;
     background-color:#f15507
-`
+`;
+const Counter = styled.div`
+    width: 15px;
+    height: 15px;
+    background-color:black;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;font-size: 10px;
+    border-radius: 50%;
+
+    position: absolute;
+    top:0px;
+    right: 50px;
+`;
 const RightContainer = styled.div`
  width: 40%;
  display: flex;
  align-items: center;
  justify-content: center;
+ position: relative;
 `;
 const Menu = styled.ul`
     display: flex;

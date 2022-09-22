@@ -35,11 +35,12 @@ function App() {
       <Testimony />
       <TestimonyShape />
     </Container>
-    <Container>
+    {/* <Container>
       <Client />
-    </Container>
+    </Container> */}
     <Container>
       <Footer />
+       <FooterShape />
     </Container>
   </>
   );
@@ -80,6 +81,12 @@ const Shape = css`
   margin-top: -50px;
  clip-path: inset(10% 27% 30% 5%);
   background-color: white;
+`;
+  const FooterShape = styled.div`
+  ${Shape}
+ // margin-top: -50px;
+ clip-path:  inset(40% 0 0 0);
+  background-color: #19001E;
 `;
 
 

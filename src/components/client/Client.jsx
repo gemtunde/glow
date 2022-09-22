@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
-import Image1 from '../img/batman.png';
-import Image2 from '../img/spiderman.png';
-import Image3 from '../img/ironman.png';
-import Image4 from '../img/superman.png';
-import Image5 from '../img/phone.png';
+import Image1 from '../img/calvin.png';
+import Image2 from '../img/framesi.png';
+import Image3 from '../img/marykay.png';
+import Image4 from '../img/versace.jpg';
+import Image5 from '../img/aloevera.png';
 
 const Client = () => {
   return (
@@ -50,14 +50,15 @@ const Container = styled.div`
    align-items: center;
    justify-content: space-around;
    margin: 0 50px; 
-   margin-top: -150px; 
+   //margin-top: -150px; 
 `;
 
 const ImageWrapper = styled.div`
-    width: 120px;
+    width: 150px;
     height: 80px;
+    margin-right: 25px;
 `;
 const Image = styled.img`
 width: 100%;
-    
+ height: 100%;
 `;

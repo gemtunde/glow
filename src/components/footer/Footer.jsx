@@ -1,24 +1,27 @@
 import React from 'react'
 import styled from 'styled-components';
+import Client from '../client/Client';
 import MiddleFooter from './MiddleFooter';
 import TopFooter from './TopFooter';
 
 const Footer = () => {
   return (
-    <Container>
+    <MainContainer>
+        <Client />
         <TopFooter />
         <MiddleFooter />
-    </Container>
+    </MainContainer>
   )
 }
 
 export default Footer;
 
-const Container = styled.div`
+const MainContainer = styled.div`
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
    margin: 0 50px; 
    margin-top: -150px; 
+  // height: 100vh;
 `;
