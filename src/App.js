@@ -1,8 +1,10 @@
 import styled, {css} from "styled-components";
 import About from "./components/about/About";
 import Banner from "./components/banner/Banner";
+import Client from "./components/client/Client";
 import Essential from "./components/essential/Essential";
 import FAQ from "./components/faq/FAQ";
+import Footer from "./components/footer/Footer";
 import Navigation from "./components/nav/Navigation";
 import Product from "./components/product/Product";
 import Testimony from "./components/testimony/Testimony";
@@ -32,6 +34,12 @@ function App() {
     <Container>
       <Testimony />
       <TestimonyShape />
+    </Container>
+    <Container>
+      <Client />
+    </Container>
+    <Container>
+      <Footer />
     </Container>
   </>
   );
