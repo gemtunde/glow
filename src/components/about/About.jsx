@@ -1,17 +1,23 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import styled from 'styled-components';
 import Woman from '../img/business.png';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const About = () => {
+   useEffect(()=>{
+        Aos.init({duration:2000})
+    },[]);
   return (
     <Container>
-        <LeftContainer>
+        <LeftContainer data-aos='fade-up'>
             <Text>We make going all natural <Span>Beauty</Span></Text>
-            <Description>
+            <Description data-aos='fade-up'>
                 Made with natural best ingredients.  Made with natural best ingredients.
                  Made with natural best ingredients. Made with natural best ingredients.
             </Description>
-            <SubContainer>
+            <SubContainer data-aos='fade-up'>
                 <Sub>
                     <SubTitleWrapper>
                     <SubTitle>Product <br />Users</SubTitle>
@@ -33,7 +39,7 @@ const About = () => {
             </SubContainer>
         </LeftContainer>
         <RightContainer>
-            <ImageWrapper>
+            <ImageWrapper data-aos='zoom-in'>
                     <Image 
               src={Woman}
               alt='woman'

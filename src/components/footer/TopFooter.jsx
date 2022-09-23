@@ -2,31 +2,51 @@ import React from 'react'
 import styled from 'styled-components';
 import Cream01 from '../img/cream01.jpg';
 import Cream02 from '../img/cream02.jpg';
-import Cream03 from '../img/cream03.jpg';
-import Cream04 from '../img/cream04.jpg';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 
 const TopFooter = () => {
+      React.useEffect(()=>{
+        Aos.init({})
+    },[]);
   return (
     <Container>
-        <ImageWrapper>
+        <ImageWrapper >
              <Image 
                  src={Cream01}
                  alt='phone'
+                  data-aos='fade-left'
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="5000"
              />
         </ImageWrapper>
-        <ImageWrapper>
+        <ImageWrapper 
+         data-aos='fade-left'
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="4000"
+        >
              <Image 
                  src={Cream02}
                  alt='super'
              />
         </ImageWrapper>
-        <ImageWrapper>
+        <ImageWrapper 
+         data-aos='fade-left'
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="6000"
+        >
              <Image 
                  src={Cream01}
                  alt='iron'
              />
         </ImageWrapper>
-        <ImageWrapper>
+        <ImageWrapper 
+         data-aos='fade-left'
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="7000"
+        >
              <Image 
                  src={Cream02}
                  alt='bat'

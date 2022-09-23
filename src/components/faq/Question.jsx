@@ -1,9 +1,17 @@
-import React from 'react';
+import React ,{useEffect} from 'react';
 import { Accordion, AccordionItem } from 'react-light-accordion';
 import 'react-light-accordion/demo/css/index.css';
 
-const Question = () => (
-  <div>
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
+const Question = () => {
+   useEffect(()=>{
+        Aos.init({duration:2000})
+    },[]);
+
+  return(
+  <div data-aos='fade-up'>
     <Accordion atomic={true}>
 
       <AccordionItem title="Where are products made?">
@@ -19,8 +27,8 @@ const Question = () => (
       </AccordionItem>
 
     </Accordion>
-  </div>
-);
+  </div>)}
+;
 
 const DummyContent = () => (
   <p style={{ padding: '18px' }}>

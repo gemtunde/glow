@@ -3,10 +3,19 @@ import styled from 'styled-components';
 import {BsArrowUpRightCircleFill} from 'react-icons/bs';
 import {FaTwitterSquare, FaFacebookSquare,  FaInstagramSquare, FaLinkedin} from 'react-icons/fa';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const MiddleFooter = () => {
+      React.useEffect(()=>{
+        Aos.init({duration:2000})
+    },[]);
   return (
     <Container>
-        <LeftContainer>
+        <LeftContainer 
+         data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
              <LogoContainer>
                       <Logo>Glow</Logo>
                        <DotIcon></DotIcon>
@@ -43,28 +52,40 @@ const MiddleFooter = () => {
                 </Wrapper>
         </LeftContainer>
         <RightContainer>
-           <SubContainer>
+           <SubContainer 
+           data-aos='fade-up'
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+           >
              <Title>Company</Title>
              <Description>About</Description>
              <Description>Jobs</Description>
              <Description>Branding</Description>
              <Description>Newsroom</Description>
            </SubContainer>
-           <SubContainer>
+           <SubContainer
+               data-aos='fade-up'
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="3000"
+           >
              <Title>Resource</Title>
              <Description>College</Description>
              <Description>Support</Description>
              <Description>Safety</Description>
              <Description>Streamkit</Description>
            </SubContainer>
-           <SubContainer>
+           <SubContainer 
+               data-aos='fade-up'
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="4000"
+           >
              <Title>Terms & Condition</Title>
              <Description>Policy</Description>
              <Description>FAQ</Description>
              <Description>Tracking</Description>
              <Description>Return & delivery</Description>
            </SubContainer>
-           <SubContent>
+           <SubContent data-aos='zoom-out'>
              <Title>Subscribe</Title>
              <Description>Get 10% off your first order</Description>
              <InputWrapper>

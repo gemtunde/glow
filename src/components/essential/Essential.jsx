@@ -1,27 +1,33 @@
-import React from 'react'
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import BodyOil from '../img/BodyOil.png';
 import {AiOutlineArrowRight} from 'react-icons/ai';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const Essential = () => {
+  useEffect(()=>{
+        Aos.init({duration:2000})
+    },[]);
   return (
     <Container>
-        <TopContainer>
+        <TopContainer data-aos='fade-up'>
             <SubContainer>
               <TopText>Trending on 
                 <Span> Essentials</Span></TopText>
-              <TopDescription>
+              <TopDescription data-aos='fade-up'>
                 Many brands, especially in skin care, carry products
                  that take centuries and they still are  best.
                  Many brands, especially in skin care, carry products
                  that take centuries and they still are  best.            
               </TopDescription>
-              <Button>
+              <Button data-aos='fade-up'>
                 Browse All Products 
                 <AiOutlineArrowRight />
               </Button>
            </SubContainer>
-            <SubContainer>
+            <SubContainer data-aos="fade-left">
               <ImageContainer>
                  <Image
                    src={BodyOil}
@@ -31,7 +37,7 @@ const Essential = () => {
               <Text>Body Oil</Text>
               <Price>#190.00</Price>
            </SubContainer>
-            <SubContainer>
+            <SubContainer data-aos="fade-left">
               <ImageContainer>
                  <Image
                    src={BodyOil}
@@ -43,7 +49,7 @@ const Essential = () => {
            </SubContainer>
        </TopContainer>  
        <BottomContainer>
-           <SubContainer>
+           <SubContainer data-aos="fade-left">
               <ImageContainer>
                  <Image
                    src={BodyOil}
@@ -53,7 +59,7 @@ const Essential = () => {
               <Text>Body Oil</Text>
               <Price>#190.00</Price>
            </SubContainer>
-           <SubContainer>
+           <SubContainer data-aos="fade-left">
               <ImageContainer>
                  <Image
                    src={BodyOil}
@@ -63,7 +69,7 @@ const Essential = () => {
               <Text>Body Oil</Text>
               <Price>#190.00</Price>
            </SubContainer>
-           <SubContainer>
+           <SubContainer data-aos="fade-left">
               <ImageContainer>
                  <Image
                    src={BodyOil}

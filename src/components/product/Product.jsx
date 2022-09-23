@@ -1,12 +1,17 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components';
 import Makeup from '../img/cosmetic.png'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Product = () => {
+      useEffect(()=>{
+        Aos.init({duration:2000})
+    },[]);
   return (
     <Container>
-        <LeftContainer>
-           <ImageWrapper>
+        <LeftContainer data-aos="zoom-in">
+           <ImageWrapper data-aos="zoom-in">
             <div></div>
                  <Image 
               src={Makeup}
@@ -15,7 +20,7 @@ const Product = () => {
            </ImageWrapper>
            
         </LeftContainer>
-        <RightContainer>
+        <RightContainer data-aos='fade-up'>
             <Text>The Self care brand that's setting
                 a new <Span>standard Clean </Span> products.
             </Text>

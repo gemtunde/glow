@@ -1,12 +1,19 @@
-import React from 'react'
+import React,{useEffect} from 'react';
 import styled from 'styled-components';
 import Woman from '../img/business.png';
+import {ImQuotesLeft} from 'react-icons/im'
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Testimony = () => {
+   useEffect(()=>{
+        Aos.init({duration:2000})
+    },[]);
   return (
     <Container>
-        <LeftContainer>
-            <Span>"</Span>
+        <LeftContainer data-aos='fade-left'>
+            <Span> <ImQuotesLeft /></Span>
             <Text> The uk jewellery award is an event we look forward to
                 and we are so honoured to be recognized</Text>
             <Title>Jane Copper</Title>
@@ -20,7 +27,7 @@ const Testimony = () => {
             </SubContainer>
         </LeftContainer>
         <RightContainer>
-            <ImageWrapper>
+            <ImageWrapper data-aos='zoom-in'>
                     <Image 
               src={Woman}
               alt='woman'

@@ -1,13 +1,19 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components';
 import {BsFillPlayFill} from 'react-icons/bs';
 import {AiOutlineArrowRight} from 'react-icons/ai';
 import Profile from '../img/business.png'
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const Banner = () => {
+    useEffect(()=>{
+        Aos.init({duration:2000})
+    },[]);
   return (
     <Container>
-        <LeftContainer>
+        <LeftContainer data-aos='fade-up'>
             <Text>
                 Let your Skin Going
                     <Image src={Profile} alt='profile' />
@@ -20,7 +26,7 @@ const Banner = () => {
                We want to bring to the world through our products
                 that very special feeling joy, health and positive energy
             </Description>
-            <SubContainer>
+            <SubContainer data-aos='fade-up'>
                 <Button>Shop Now <AiOutlineArrowRight/></Button>
                 <SubContainerText>                        
                 <Icon><BsFillPlayFill size={20} /></Icon>
@@ -28,7 +34,7 @@ const Banner = () => {
                 </SubContainerText>
             </SubContainer>
         </LeftContainer>    
-        <RightContainer>
+        <RightContainer data-aos='fade-down'>
             <BannerImage
                 src={Profile}
                 alt='profile'

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import Client from '../client/Client';
+import BottomFooter from './BottomFooter';
 import MiddleFooter from './MiddleFooter';
 import TopFooter from './TopFooter';
 
@@ -10,6 +11,7 @@ const Footer = () => {
         <Client />
         <TopFooter />
         <MiddleFooter />
+        <BottomFooter />
     </MainContainer>
   )
 }

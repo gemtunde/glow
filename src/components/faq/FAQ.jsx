@@ -1,13 +1,19 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components';
 import Makeup from '../img/cosmetic.png'
 import Question from './Question';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const FAQ = () => {
+  useEffect(()=>{
+        Aos.init({duration:2000})
+    },[]);
   return (
     <Container>
         <LeftContainer>
-           <ImageWrapper>
+           <ImageWrapper data-aos='zoom-in'>
             <div></div>
                  <Image 
               src={Makeup}
@@ -17,7 +23,7 @@ const FAQ = () => {
            
         </LeftContainer>
         <RightContainer>
-            <Text>You have<Span> Questions,</Span> we have answers.  </Text>            
+            <Text data-aos='fade-up'>You have<Span> Questions,</Span> we have answers.  </Text>            
                 <Question />           
         </RightContainer>
     </Container>

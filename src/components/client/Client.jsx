@@ -56,7 +56,8 @@ const Container = styled.div`
 const ImageWrapper = styled.div`
     width: 150px;
     height: 80px;
-    margin-right: 25px;
+    margin-right: 55px;
+    padding: 0 25px;
 `;
 const Image = styled.img`
 width: 100%;
