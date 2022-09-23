@@ -75,40 +75,6 @@ const Text = styled.h1`
 const Span = styled.span`
   color: #f15507;
 `;
-const SubContainer = styled.div`
-display: flex;
-align-items: center;
-justify-content: start;
-margin-top: 20px;
-padding: 10px;
-`;
-const Sub1 = styled.div`
-display: flex;
-flex-direction:column;
-//align-items: center;
-//justify-content: start;
-//margin: 15px;
-//padding: 5px;
-margin-right: 10px;
-`;
-const Sub2 = styled.div`
-display: flex;
-flex-direction:column;
-margin-left: 10px;
-//align-items: center;
-//justify-content: start;
-//margin: 15px;
-//padding: 5px;
-`;
-const SubText = styled.h4`
-font-size: 18px;
- color: #350c35d3;
-`;
-const SubDescription = styled.p`
-margin-top: 10px;
-color: grey;
-font-size: 16px;
-`;
 
 
 

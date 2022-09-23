@@ -1,7 +1,6 @@
 import styled, {css} from "styled-components";
 import About from "./components/about/About";
 import Banner from "./components/banner/Banner";
-import Client from "./components/client/Client";
 import Essential from "./components/essential/Essential";
 import FAQ from "./components/faq/FAQ";
 import Footer from "./components/footer/Footer";
@@ -34,10 +33,7 @@ function App() {
     <Container>
       <Testimony />
       <TestimonyShape />
-    </Container>
-    {/* <Container>
-      <Client />
-    </Container> */}
+    </Container> 
     <Container>
       <Footer />
        <FooterShape />
