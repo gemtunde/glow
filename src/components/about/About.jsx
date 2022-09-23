@@ -55,7 +55,7 @@ export default About;
 const Container = styled.div`
    display: flex;
    margin: 0px 50px; 
- 
+ margin-top: 50px;
 `;
 const LeftContainer = styled.div`
 width: 50%;

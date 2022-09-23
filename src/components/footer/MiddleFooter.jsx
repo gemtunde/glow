@@ -111,7 +111,8 @@ const Container = styled.div`
    width: 100%;
    padding: 20px;   
    z-index: 5;
-   margin-top: -100px;
+   margin-top: -150px;
+   margin-bottom: -30px;
 `;
 const LeftContainer = styled.div`
     width: 30%;

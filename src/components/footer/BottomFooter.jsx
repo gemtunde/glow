@@ -20,6 +20,7 @@ const Container = styled.div`
    width: 50%;
    align-items: center;
    justify-content: center;
+  // background-color: #19001E;
 `;
 const Text = styled.p`
     color: grey;

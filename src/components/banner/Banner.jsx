@@ -17,7 +17,7 @@ const Banner = () => {
             <Text>
                 Let your Skin Going
                     <Image src={Profile} alt='profile' />
-                 Out.
+                 Out
             </Text>
             <RoundTag></RoundTag>
             <Description>
@@ -62,7 +62,7 @@ margin-top: 100px;
 position: relative;
 `;
 const Text = styled.h2`
-font-size: 85px;
+font-size: 80px;
 font-weight: normal;
 `;
 const RoundTag = styled.div`
@@ -72,8 +72,8 @@ const RoundTag = styled.div`
     background-color:transparent;
     border-radius: 30px;
     position: absolute;
-    top: 136px;
-    right: 204px;
+    top: 130px;
+    right: 185px;
 `;
 const Image = styled.img`
   width: 150px;
